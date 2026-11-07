@@ -29,7 +29,9 @@ list() {
 }
 
 today_note() {
-  grep "^\[$today\]" "$NOTE_DIR/notes.md" 2>/dev/null || echo "(tidak ada catatan hari ini)"
+  local d
+  d=$(date +"%F")
+  grep "^\[$d\]" "$NOTE_DIR/notes.md" 2>/dev/null || echo "(tidak ada catatan hari ini)"
 }
 
 case "${1:-help}" in
