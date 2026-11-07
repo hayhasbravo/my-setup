@@ -1,0 +1,17 @@
+# File sementara / lokal
+*.log
+.env
+*.tmp
+
+# Editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
