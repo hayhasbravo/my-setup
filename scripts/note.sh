@@ -16,7 +16,7 @@ add() {
   local text="$1"
   [ -z "$text" ] && { echo "Hati-hati: teks kosong."; exit 1; }
   echo "[$(today)] $text" >> "$NOTE_DIR/notes.md"
-  echo "✓ Ditambahkan: [$today] $text"
+  echo "✓ Ditambahkan: [$(today)] $text"
 }
 
 list() {
